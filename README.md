@@ -3,6 +3,7 @@
 **Для корректной работы снимите все остальные галочки перед запуском.**
 
 [Ссылка на задание](https://webstels.notion.site/TCP-FLEX-1524377910178037bba4e717d2adb55e)
+[Ссылка на эмулятор](https://wiki.navtelecom.ru/ru/home/developers/flex_device_emulator)
 
 Сервер работает на 9000 порту
 
