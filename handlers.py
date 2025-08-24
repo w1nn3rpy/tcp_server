@@ -31,8 +31,8 @@ async def handler(reader: asyncio.StreamReader, writer: asyncio.StreamWriter):
                 result = {'device_id': device_id, }
 
 
-                for i, k in parse_flex_packet(data).items():
-                    result[i] = k
+                for k, v in parse_flex_packet(data).items():
+                    result[k] = v
 
                 print(json.dumps(result, indent=4))
 
