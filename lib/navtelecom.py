@@ -1,8 +1,6 @@
 class Navtelecom:
     def __init__(self):
         self._device_id = None
-        self._authorized = False
-        self._flex_confirmed = False
         self._flex_v = 1
 
     @property

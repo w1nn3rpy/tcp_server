@@ -91,7 +91,6 @@ async def handle_flex_agreement(writer, packet: bytes):
     writer.write(reply_packet)
     await writer.drain()
 
-    navtelecom.flex_confirmed = True
     navtelecom.device_id = id_dc
     return True
 

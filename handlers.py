@@ -12,9 +12,6 @@ async def auth(writer: asyncio.StreamWriter, data: bytes):
     writer.write(handshake)
     await writer.drain()
 
-    navtelecom.authorized = True
-
-
 async def handler(reader: asyncio.StreamReader, writer: asyncio.StreamWriter):
 
     while True:
@@ -50,6 +47,4 @@ async def handler(reader: asyncio.StreamReader, writer: asyncio.StreamWriter):
 
         except (ConnectionResetError, asyncio.IncompleteReadError):
             print(f"Клиент закрыл соединение")
-            navtelecom.flex_confirmed = False
-            navtelecom.authorized = False
             break
